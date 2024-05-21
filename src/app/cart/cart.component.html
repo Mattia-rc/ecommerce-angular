@@ -1,0 +1,22 @@
+<p>cart-page works!</p>
+
+<!-- carrito.component.html -->
+  <a [routerLink]="['']">
+    <button class="btn btn-secondary">
+      volver
+    </button>
+  </a>
+<div class="container mt-4">
+    <div *ngIf="carrito.length > 0 else noItems">
+      <h2>Carrito de Compras</h2>
+      <ul>
+        <li *ngFor="let producto of carrito">
+          {{ producto.nombre }} - Cantidad: {{ producto.cantidad }} - Precio: ${{ producto.precio }}
+        </li>
+      </ul>
+    </div>
+    <ng-template #noItems>
+      <p>No hay elementos en el carrito.</p>
+    </ng-template>
+  </div>
+  

@@ -1,0 +1,125 @@
+
+
+.img-detail{
+    width: 700px;
+}
+
+.content-flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 8%;
+}
+
+.size-img{
+    width: 570px;
+    border-radius: 10px;
+}
+
+.contendor-hijo-detalle{
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+}
+
+ h3{
+    font-family: "Exo 2", sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.p-contendor-hijo-detalle{
+    font-family: "Radio Canada Big", sans-serif;
+    font-weight: 200;
+    color: grey;
+}
+
+.contenido-detalle{
+    max-width: 600px;
+}
+.contenido-detalle-p-style{
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.detalles-style{
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+
+.p-stlye-detalle{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: "Radio Canada Big", sans-serif;
+    font-weight: 600;
+}
+
+h4{
+    font-family: "Radio Canada Big", sans-serif;
+}
+
+.p-stlye-detalle:hover{
+    border-bottom: 1px solid black;
+    
+}
+
+.cantidad-product-style{
+    margin-top: 40px;
+}
+
+.button-styles{
+    margin-top: 50px;
+    display: flex;
+    gap: 50px;
+}
+
+.button-1{
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    border: none;
+    font-family: "Exo 2", sans-serif;
+    font-size: 17px;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.4);
+}
+
+.button-2{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: transparent;
+    border-radius: 15px;
+    font-family: "Exo 2", sans-serif;
+    font-size: 17px;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.4);
+}
+
+
+
+.contenedor-talles{
+margin-top: 20px;
+max-width: 300px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.btn-size{
+    background-color: transparent;
+    padding: 5px 20px 5px 20px;
+    border-radius: 10px;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.4);
+}
+
+.button-color{
+    padding: 15px;
+    border-radius: 100%;
+    border: 1px solid bisque;
+}

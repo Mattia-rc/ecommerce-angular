@@ -1,0 +1,49 @@
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <!-- Container wrapper -->
+  <div class="container">
+    <!-- Navbar brand -->
+    <a class="navbar-brand" href="#"><img id="MDB-logo"
+        src="https://mdbcdn.b-cdn.net/wp-content/uploads/2018/06/logo-mdb-jquery-small.png" alt="MDB Logo"
+        draggable="false" height="30" /></a>
+
+    <!-- Toggle button -->
+    <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+      data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- Left links -->
+      <ul class="navbar-nav me-3">
+
+      </ul>
+      <!-- Left links -->
+
+      <form class="d-flex align-items-center w-100 form-search">
+        <div class="input-group">
+          <ul class="dropdown-menu dropdown-menu-dark fa-ul">
+            
+          </ul>
+          <input type="search" class="form-control" placeholder="Search" aria-label="Search" />
+        </div>
+        <a href="#!" class="text-white"><i class="fas fa-search ps-3"></i></a>
+      </form>
+
+      <ul class="navbar-nav ms-3">
+        <li class="nav-item me-3">
+          <a class="nav-link d-flex align-items-center" [routerLink]="['/cart']">
+            <span class="material-symbols-outlined">
+              shopping_cart
+              </span>
+            </a>
+        </li>
+      </ul>
+    </div>
+    <!-- Collapsible wrapper -->
+  </div>
+  <!-- Container wrapper -->
+</nav>
+<!-- Navbar -->

@@ -1,0 +1,43 @@
+<div class="container mt-4">
+
+    <div class="row">
+      <div class="col-md-3" *ngFor="let producto of productos, let i=index">
+        
+            <div class="card card-style mb-4">
+                <img [src]="producto.photo"  class="card-img-top" alt="{{ producto.nombre }}">
+                <div class="card-body">
+                  <h5 class="card-title style-nombre-card">{{ producto.nombre }}</h5>
+                  <p class="card-text style-detalle-card">{{ producto.detalle }}</p>
+                </div>
+                <p class="card-text mx-3 precio-style-card" [ngClass]="['textoPrecioProduct']">${{ producto.precio }}</p>
+                <div class="d-flex gap-2 mx-3 mb-3" [ngClass]="['flexDetalle']">
+
+                  <a style="text-decoration: none;" [routerLink]="['/detail', i]">
+                    <input type="button" value="Detalle" class="btn btn-secondary">
+                    </a>
+
+                    <button class="btn btn-primary" (click)="agregarProducto(producto)" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Agregar al carrito</button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                      <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasRightLabel">Carrito</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                      </div>
+                      <div class="offcanvas-body" *ngFor="let product of cart">
+
+                        <h5>{{product.detalle}}</h5>
+                        <img class="img-cart" src={{product.photo}} alt="">
+                        <h5>${{product.precio}}</h5>
+                        <hr>
+                      </div>
+                    </div>
+
+                </div>
+
+              </div>
+      </div>
+    </div>
+
+
+
+  </div>
+
